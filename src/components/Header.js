@@ -23,7 +23,7 @@ export default function Header() {
           {
             <Typewriter
               onInit={(typewriter) => {
-                typewriter.typeString("Hello, I'am João").start();
+                typewriter.typeString("Hello, I'm João").start();
               }}
             />
           }
@@ -33,7 +33,7 @@ export default function Header() {
           <span className="text-lg sm:text-xl font-bold text-white">
             JUNIOR MERN Full Stack Developer.{" "}
           </span>
-          Ready for my first opportunity as profissional Developer.
+          Ready for my first opportunity as a professional Developer.
         </h3>
         <div className="flex space-x-5 sm:space-x-8 sm:mt-6 mt-4">
           <a href="https://www.linkedin.com/in/joaopsmachado/" target="blank">

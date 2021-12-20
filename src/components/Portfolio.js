@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import { useState } from "react";
 import Image from "next/image";
 
@@ -21,7 +22,7 @@ export default function Portfolio() {
         This section is ALWAYS under construction
       </p>
       <p className="text-sm sm:text-md italic text-blue-900">
-        More projects comming soon
+        More projects comming soon...
       </p>
 
       <div className="bg-gray-200 rounded-md sm:rounded-lg sm:mt-12 mt-6 flex flex-wrap overflow-scroll scrollbar-hide p-2 justify-center">
@@ -168,6 +169,12 @@ export default function Portfolio() {
                 target="blank"
               >
                 Amazon Clone
+              </a>
+              <a href="https://github.com/jpsm83/amazon-clone" target="blank">
+                <div className="flex justify-center space-x-2 items-center bg-yellow-600 mt-4 text-white p-2 rounded-lg">
+                  <Image src="/images/github.png" height={20} width={20} />
+                  <p>Full Code</p>
+                </div>
               </a>
               <br />
               <hr />
@@ -325,6 +332,24 @@ export default function Portfolio() {
                 target="blank"
               >
                 My Recipes Library
+              </a>
+              <a
+                href="https://github.com/jpsm83/my-recipes-library-client"
+                target="blank"
+              >
+                <div className="flex justify-center space-x-2 items-center bg-yellow-600 mt-4 text-white p-2 rounded-lg">
+                  <Image src="/images/github.png" height={20} width={20} />
+                  <p>Frontend Code</p>
+                </div>
+              </a>
+              <a
+                href="https://github.com/jpsm83/my-recipes-library-server"
+                target="blank"
+              >
+                <div className="flex justify-center space-x-2 items-center bg-yellow-600 mt-4 text-white p-2 rounded-lg">
+                  <Image src="/images/github.png" height={20} width={20} />
+                  <p>Backend Code</p>
+                </div>
               </a>
               <br />
               <hr />

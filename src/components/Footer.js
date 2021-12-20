@@ -26,7 +26,7 @@ export default function Footer() {
         </div>
       </div>
       <p className="text-sm italic sm:text-md text-center text-gray-600">
-        Crate by <span className="font-bold">Joao P S Machado</span>
+        Created by <span className="font-bold">Joao P S Machado</span>
       </p>
     </div>
   );
