@@ -74,6 +74,19 @@ export default function Resume() {
           <div className="flex space-x-2 m-4 items-center">
             <div className="flex justify-center items-center h-30 overflow-hidden shrink-0">
               <Image
+                src="/images/passportjs.png"
+                alt="PassportJs Image"
+                height={40}
+                width={40}
+                objectFit="cover"
+              />
+            </div>
+            <p className="text-md sm:text-lg">PassportJs</p>
+          </div>
+
+          <div className="flex space-x-2 m-4 items-center">
+            <div className="flex justify-center items-center h-30 overflow-hidden shrink-0">
+              <Image
                 src="/images/express.png"
                 alt="Express Image"
                 height={40}
@@ -160,19 +173,6 @@ export default function Resume() {
               />
             </div>
             <p className="text-md sm:text-lg">Javascript</p>
-          </div>
-
-          <div className="flex space-x-2 m-4 items-center">
-            <div className="flex justify-center items-center h-30 overflow-hidden shrink-0">
-              <Image
-                src="/images/linkedin.jpg"
-                alt="Linkedin Image"
-                height={40}
-                width={40}
-                objectFit="cover"
-              />
-            </div>
-            <p className="text-md sm:text-lg">Linkedin</p>
           </div>
 
           <div className="flex space-x-2 m-4 items-center">

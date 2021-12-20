@@ -5,9 +5,9 @@ export default function About() {
   return (
     <section
       id="about"
-      className="bg-gray-700 flex sm:flex-nowrap flex-wrap justify-center sm:justify-between p-10 sm:p-20"
+      className="bg-gray-700 flex sm:flex-nowrap flex-wrap justify-center sm:justify-between p-10 sm:p-12"
     >
-      <div className="flex justify-center h-40 w-40 overflow-hidden rounded-full shrink-0 mr-10 sm:mr-20">
+      <div className="flex justify-center h-40 w-40 overflow-hidden rounded-full shrink-0 mr-10 sm:mr-20 mb-10">
         <Image
           src="/images/profilepic.jpg"
           alt="Profile Image"

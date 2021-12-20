@@ -3,10 +3,13 @@ import Image from "next/image";
 import { ArrowCircleUpIcon } from "@heroicons/react/solid";
 
 export default function Footer() {
+  
   return (
-    <div className="bg-gray-300 flex flex-col pb-6">
+    <div className="bg-white flex flex-col pb-6">
       <div className="flex justify-end">
-        <ArrowCircleUpIcon className="h-10 w-10 m-4 text-black sm:scale-150" />
+        <a href="#home">
+          <ArrowCircleUpIcon className="h-10 w-10 m-4 text-black sm:scale-150" />
+        </a>
       </div>
       <div className=" flex justify-center items-center">
         <div className="flex space-x-8 sm:space-x-14 mb-4">

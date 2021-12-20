@@ -38,12 +38,12 @@ export default function Header() {
         <div className="flex space-x-5 sm:space-x-8 sm:mt-6 mt-4">
           <a href="https://www.linkedin.com/in/joaopsmachado/" target="blank">
             <div className="sm:scale-150">
-              <Image src="/images/linkedin.jpg" height={20} width={20} />
+              <Image src="/images/linkedin.jpg" height={30} width={30} />
             </div>
           </a>
           <a href="https://github.com/jpsm83" target="blank">
             <div className="sm:scale-150">
-              <Image src="/images/github.png" height={20} width={20} />
+              <Image src="/images/github.png" height={30} width={30} />
             </div>
           </a>
         </div>
