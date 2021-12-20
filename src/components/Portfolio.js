@@ -28,7 +28,7 @@ export default function Portfolio() {
         <div className="flex flex-col w-60 overflow-hidden sm:m-4 m-2">
           <button onClick={() => toggleShow(showAmazon, setShowAmazon)}>
             <Image
-              src="/images/amazonClone.png"
+              src="/images/amazonClone.PNG"
               alt="Amazon Clone Image"
               height={120}
               width={240}
@@ -177,7 +177,7 @@ export default function Portfolio() {
         <div className="flex flex-col w-60 overflow-hidden sm:m-4 m-2">
           <button onClick={() => toggleShow(showRecipes, setShowRecipes)}>
             <Image
-              src="/images/myRecipesLibrary.png"
+              src="/images/myRecipesLibrary.PNG"
               alt="Recipes Library Image"
               height={120}
               width={240}
