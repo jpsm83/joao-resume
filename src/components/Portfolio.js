@@ -5,6 +5,7 @@ import Image from "next/image";
 export default function Portfolio() {
   const [showAmazon, setShowAmazon] = useState(false);
   const [showRecipes, setShowRecipes] = useState(false);
+  const [showMovieRedux, setShowMovieRedux] = useState(false);
 
   const toggleShow = (project, setProject) => {
     setProject(!project);
@@ -356,6 +357,142 @@ export default function Portfolio() {
             </div>
           ) : null}
         </div>
+
+        <div className="flex flex-col w-60 overflow-hidden sm:m-4 m-2">
+          <button onClick={() => toggleShow(showMovieRedux, setShowMovieRedux)}>
+            <Image
+              src="/images/movieRedux.PNG"
+              alt="Movie Redux Image"
+              height={120}
+              width={240}
+              objectFit="contain"
+            />
+          </button>
+
+          {showMovieRedux ? (
+            <div>
+              <div className="mt-2 flex justify-center flex-wrap">
+                <div className="flex justify-center items-center m-1 overflow-hidden shrink-0">
+                  <Image
+                    src="/images/github.png"
+                    alt="github Image"
+                    height={20}
+                    width={20}
+                    objectFit="contain"
+                  />
+                </div>
+                <div className="flex justify-center items-center m-1 overflow-hidden shrink-0">
+                  <Image
+                    src="/images/hooks.png"
+                    alt="Hooks Image"
+                    height={20}
+                    width={20}
+                    objectFit="contain"
+                  />
+                </div>
+                <div className="flex justify-center items-center overflow-hidden shrink-0">
+                  <Image
+                    src="/images/html.png"
+                    alt="Html Image"
+                    height={20}
+                    width={20}
+                    objectFit="contain"
+                  />
+                </div>
+                <div className="flex justify-center items-center m-1 overflow-hidden shrink-0">
+                  <Image
+                    src="/images/javascript.png"
+                    alt="Javascript Image"
+                    height={20}
+                    width={20}
+                    objectFit="contain"
+                  />
+                </div>
+                <div className="flex justify-center items-center overflow-hidden shrink-0">
+                  <Image
+                    src="/images/node.png"
+                    alt="Node Image"
+                    height={20}
+                    width={20}
+                    objectFit="contain"
+                  />
+                </div>
+                <div className="flex justify-center items-center m-1 overflow-hidden shrink-0">
+                  <Image
+                    src="/images/react.png"
+                    alt="React Image"
+                    height={20}
+                    width={20}
+                    objectFit="contain"
+                  />
+                </div>
+                <div className="flex justify-center items-center m-1 overflow-hidden shrink-0">
+                  <Image
+                    src="/images/redux.jpg"
+                    alt="Redux Image"
+                    height={20}
+                    width={20}
+                    objectFit="contain"
+                  />
+                </div>
+                <div className="flex justify-center items-center overflow-hidden shrink-0">
+                  <Image
+                    src="/images/sass.png"
+                    alt="Sass Image"
+                    height={20}
+                    width={20}
+                    objectFit="contain"
+                  />
+                </div>
+                <div className="flex justify-center items-center m-1 overflow-hidden shrink-0">
+                  <Image
+                    src="/images/ubuntu.png"
+                    alt="Ubuntu Image"
+                    height={20}
+                    width={20}
+                    objectFit="contain"
+                  />
+                </div>
+                <div className="flex justify-center items-center m-1 overflow-hidden shrink-0">
+                  <Image
+                    src="/images/vercel.svg"
+                    alt="Vercel Image"
+                    height={20}
+                    width={20}
+                    objectFit="contain"
+                  />
+                </div>
+              </div>
+
+              <h2 className="font-bold text-md sm:text-lg text-yellow-600 sm:mt-4 mt-2 mb-1 sm:mb-2">
+                Main Features
+              </h2>
+              <ul className="text-sm sm:text-md">
+                <li>React application</li>
+                <li>Responsive UI</li>
+                <li>External API Imdb</li>
+                <li>Redux toolkit for search</li>
+                <li>Styles with Sass</li>
+              </ul>
+              <a
+                className="flex justify-center items-center bg-green-800 mt-4 text-white shadow-md p-2 rounded-lg"
+                href="https://movies-redux.vercel.app/"
+                target="blank"
+              >
+                Movies Redux
+              </a>
+              <a href="https://github.com/jpsm83/movies-redux" target="blank">
+                <div className="flex justify-center space-x-2 items-center bg-yellow-600 mt-4 text-white p-2 rounded-lg">
+                  <Image src="/images/github.png" height={20} width={20} />
+                  <p>Full Code</p>
+                </div>
+              </a>
+              <br />
+              <hr />
+            </div>
+          ) : null}
+        </div>
+
       </div>
     </section>
   );

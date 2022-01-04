@@ -61,6 +61,19 @@ export default function Resume() {
           <div className="flex space-x-2 m-4 items-center">
             <div className="flex justify-center items-center h-30 overflow-hidden shrink-0">
               <Image
+                src="/images/sass.png"
+                alt="Sass Image"
+                height={40}
+                width={40}
+                objectFit="cover"
+              />
+            </div>
+            <p className="text-md sm:text-lg">Sass</p>
+          </div>
+
+          <div className="flex space-x-2 m-4 items-center">
+            <div className="flex justify-center items-center h-30 overflow-hidden shrink-0">
+              <Image
                 src="/images/css.png"
                 alt="Css Image"
                 height={40}
