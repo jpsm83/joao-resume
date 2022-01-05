@@ -361,7 +361,7 @@ export default function Portfolio() {
         <div className="flex flex-col w-60 overflow-hidden sm:m-4 m-2">
           <button onClick={() => toggleShow(showMovieRedux, setShowMovieRedux)}>
             <Image
-              src="/images/movieRedux.PNG"
+              src="/images/movieRedux.png"
               alt="Movie Redux Image"
               height={120}
               width={240}
@@ -470,6 +470,7 @@ export default function Portfolio() {
               <ul className="text-sm sm:text-md">
                 <li>React application</li>
                 <li>Responsive UI</li>
+                <li>React Router Dom 6.2.1</li>
                 <li>External API Imdb</li>
                 <li>Redux toolkit for search</li>
                 <li>Styles with Sass</li>
