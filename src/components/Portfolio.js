@@ -6,6 +6,7 @@ export default function Portfolio() {
   const [showAmazon, setShowAmazon] = useState(false);
   const [showRecipes, setShowRecipes] = useState(false);
   const [showMovieRedux, setShowMovieRedux] = useState(false);
+  const [showToDo, setShowToDo] = useState(false);
 
   const toggleShow = (project, setProject) => {
     setProject(!project);
@@ -261,7 +262,7 @@ export default function Portfolio() {
                 </div>
                 <div className="flex justify-center items-center m-1 overflow-hidden shrink-0">
                   <Image
-                    src="/images/mongodb.png"
+                    src="/images/mongodb.gif"
                     alt="MongoDb Image"
                     height={20}
                     width={20}
@@ -357,7 +358,6 @@ export default function Portfolio() {
             </div>
           ) : null}
         </div>
-
         <div className="flex flex-col w-60 overflow-hidden sm:m-4 m-2">
           <button onClick={() => toggleShow(showMovieRedux, setShowMovieRedux)}>
             <Image
@@ -493,7 +493,151 @@ export default function Portfolio() {
             </div>
           ) : null}
         </div>
+        <div className="flex flex-col w-60 overflow-hidden sm:m-4 m-2">
+          <button onClick={() => toggleShow(showToDo, setShowToDo)}>
+            <Image
+              src="/images/toDoApp.png"
+              alt="To Do App Image"
+              height={120}
+              width={240}
+              objectFit="contain"
+            />
+          </button>
 
+          {showToDo ? (
+            <div>
+              <div className="mt-2 flex justify-center flex-wrap">
+                <div className="flex justify-center items-center m-1 overflow-hidden shrink-0">
+                  <Image
+                    src="/images/github.png"
+                    alt="github Image"
+                    height={20}
+                    width={20}
+                    objectFit="contain"
+                  />
+                </div>
+                <div className="flex justify-center items-center m-1 overflow-hidden shrink-0">
+                  <Image
+                    src="/images/hooks.png"
+                    alt="Hooks Image"
+                    height={20}
+                    width={20}
+                    objectFit="contain"
+                  />
+                </div>
+                <div className="flex justify-center items-center overflow-hidden shrink-0">
+                  <Image
+                    src="/images/html.png"
+                    alt="Html Image"
+                    height={20}
+                    width={20}
+                    objectFit="contain"
+                  />
+                </div>
+                <div className="flex justify-center items-center m-1 overflow-hidden shrink-0">
+                  <Image
+                    src="/images/javascript.png"
+                    alt="Javascript Image"
+                    height={20}
+                    width={20}
+                    objectFit="contain"
+                  />
+                </div>
+                <div className="flex justify-center items-center overflow-hidden shrink-0">
+                  <Image
+                    src="/images/node.png"
+                    alt="Node Image"
+                    height={20}
+                    width={20}
+                    objectFit="contain"
+                  />
+                </div>
+                <div className="flex justify-center items-center m-1 overflow-hidden shrink-0">
+                  <Image
+                    src="/images/next.png"
+                    alt="Next Image"
+                    height={20}
+                    width={20}
+                    objectFit="contain"
+                  />
+                </div>
+                <div className="flex justify-center items-center m-1 overflow-hidden shrink-0">
+                  <Image
+                    src="/images/ubuntu.png"
+                    alt="Ubuntu Image"
+                    height={20}
+                    width={20}
+                    objectFit="contain"
+                  />
+                </div>
+                <div className="flex justify-center items-center m-1 overflow-hidden shrink-0">
+                  <Image
+                    src="/images/vercel.svg"
+                    alt="Vercel Image"
+                    height={20}
+                    width={20}
+                    objectFit="contain"
+                  />
+                </div>
+                <div className="flex justify-center items-center m-1 overflow-hidden shrink-0">
+                  <Image
+                    src="/images/mongodb.gif"
+                    alt="MongoDB Image"
+                    height={20}
+                    width={20}
+                    objectFit="contain"
+                  />
+                </div>
+                <div className="flex justify-center items-center m-1 overflow-hidden shrink-0">
+                  <Image
+                    src="/images/postman.png"
+                    alt="Postman Image"
+                    height={20}
+                    width={20}
+                    objectFit="contain"
+                  />
+                </div>
+                <div className="flex justify-center items-center m-1 overflow-hidden shrink-0">
+                  <Image
+                    src="/images/tailwind.svg"
+                    alt="Tailwind Image"
+                    height={20}
+                    width={20}
+                    objectFit="contain"
+                  />
+                </div>
+              </div>
+              <h2 className="font-bold text-md sm:text-lg text-yellow-600 sm:mt-4 mt-2 mb-1 sm:mb-2">
+                Main Features
+              </h2>
+              <ul className="text-sm sm:text-md">
+                <li>NextJS application</li>
+                <li>Responsive UI</li>
+                <li>Authentication NextAuth</li>
+                <li>Google Signup</li>
+                <li>CRUD to dos</li>
+                <li>MongoDB Atlas</li>
+                <li>Manage your notes</li>
+                <li></li>
+              </ul>
+              <a
+                className="flex justify-center items-center bg-green-800 mt-4 text-white shadow-md p-2 rounded-lg"
+                href="https://to-do-next-beryl.vercel.app/"
+                target="blank"
+              >
+                To Do App
+              </a>
+              <a href="https://github.com/jpsm83/to-do-next" target="blank">
+                <div className="flex justify-center space-x-2 items-center bg-yellow-600 mt-4 text-white p-2 rounded-lg">
+                  <Image src="/images/github.png" height={20} width={20} />
+                  <p>Full Code</p>
+                </div>
+              </a>
+              <br />
+              <hr />
+            </div>
+          ) : null}
+        </div>
       </div>
     </section>
   );
