@@ -7,7 +7,7 @@ export default function Portfolio() {
   const [showRecipes, setShowRecipes] = useState(false);
   const [showMovieRedux, setShowMovieRedux] = useState(false);
   const [showToDo, setShowToDo] = useState(false);
-  const [showNetflix, setShowNetflix] = useState(false)
+  const [showNetflix, setShowNetflix] = useState(false);
 
   const toggleShow = (project, setProject) => {
     setProject(!project);
@@ -764,10 +764,7 @@ export default function Portfolio() {
               >
                 Netflix Clone
               </a>
-              <a
-                href="https://github.com/jpsm83/netflix-clone"
-                target="blank"
-              >
+              <a href="https://github.com/jpsm83/netflix-clone" target="blank">
                 <div className="flex justify-center space-x-2 items-center bg-yellow-600 mt-4 text-white p-2 rounded-lg">
                   <Image src="/images/github.png" height={20} width={20} />
                   <p>Full Code</p>
