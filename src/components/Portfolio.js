@@ -7,6 +7,7 @@ export default function Portfolio() {
   const [showRecipes, setShowRecipes] = useState(false);
   const [showMovieRedux, setShowMovieRedux] = useState(false);
   const [showToDo, setShowToDo] = useState(false);
+  const [showNetflix, setShowNetflix] = useState(false)
 
   const toggleShow = (project, setProject) => {
     setProject(!project);
@@ -186,7 +187,7 @@ export default function Portfolio() {
         <div className="flex flex-col w-60 overflow-hidden sm:m-4 m-2">
           <button onClick={() => toggleShow(showRecipes, setShowRecipes)}>
             <Image
-              src="/images/myRecipesLibrary.PNG"
+              src="/images/myRecipesLibrary.png"
               alt="Recipes Library Image"
               height={120}
               width={240}
@@ -628,6 +629,145 @@ export default function Portfolio() {
                 To Do App
               </a>
               <a href="https://github.com/jpsm83/to-do-next" target="blank">
+                <div className="flex justify-center space-x-2 items-center bg-yellow-600 mt-4 text-white p-2 rounded-lg">
+                  <Image src="/images/github.png" height={20} width={20} />
+                  <p>Full Code</p>
+                </div>
+              </a>
+              <br />
+              <hr />
+            </div>
+          ) : null}
+        </div>
+        <div className="flex flex-col w-60 overflow-hidden sm:m-4 m-2">
+          <button onClick={() => toggleShow(showNetflix, setShowNetflix)}>
+            <Image
+              src="/images/netflixClone.png"
+              alt="Netflix Clone Image"
+              height={120}
+              width={240}
+              objectFit="contain"
+            />
+          </button>
+
+          {showNetflix ? (
+            <div>
+              <div className="mt-2 flex justify-center flex-wrap">
+                <div className="flex justify-center items-center m-1 overflow-hidden shrink-0">
+                  <Image
+                    src="/images/github.png"
+                    alt="Github Image"
+                    height={20}
+                    width={20}
+                    objectFit="contain"
+                  />
+                </div>
+                <div className="flex justify-center items-center m-1 overflow-hidden shrink-0">
+                  <Image
+                    src="/images/hooks.png"
+                    alt="Hooks Image"
+                    height={20}
+                    width={20}
+                    objectFit="contain"
+                  />
+                </div>
+                <div className="flex justify-center items-center overflow-hidden shrink-0">
+                  <Image
+                    src="/images/html.png"
+                    alt="Html Image"
+                    height={20}
+                    width={20}
+                    objectFit="contain"
+                  />
+                </div>
+                <div className="flex justify-center items-center m-1 overflow-hidden shrink-0">
+                  <Image
+                    src="/images/javascript.png"
+                    alt="Javascript Image"
+                    height={20}
+                    width={20}
+                    objectFit="contain"
+                  />
+                </div>
+                <div className="flex justify-center items-center overflow-hidden shrink-0">
+                  <Image
+                    src="/images/node.png"
+                    alt="Node Image"
+                    height={20}
+                    width={20}
+                    objectFit="contain"
+                  />
+                </div>
+                <div className="flex justify-center items-center m-1 overflow-hidden shrink-0">
+                  <Image
+                    src="/images/react.png"
+                    alt="React Image"
+                    height={20}
+                    width={20}
+                    objectFit="contain"
+                  />
+                </div>
+                <div className="flex justify-center items-center overflow-hidden shrink-0">
+                  <Image
+                    src="/images/css.png"
+                    alt="Css Image"
+                    height={20}
+                    width={20}
+                    objectFit="contain"
+                  />
+                </div>
+                <div className="flex justify-center items-center m-1 overflow-hidden shrink-0">
+                  <Image
+                    src="/images/ubuntu.png"
+                    alt="Ubuntu Image"
+                    height={20}
+                    width={20}
+                    objectFit="contain"
+                  />
+                </div>
+                <div className="flex justify-center items-center m-1 overflow-hidden shrink-0">
+                  <Image
+                    src="/images/firebase.png"
+                    alt="Firebase Image"
+                    height={20}
+                    width={20}
+                    objectFit="contain"
+                  />
+                </div>
+                <div className="flex justify-center items-center m-1 overflow-hidden shrink-0">
+                  <Image
+                    src="/images/redux.jpg"
+                    alt="Redux Image"
+                    height={20}
+                    width={20}
+                    objectFit="contain"
+                  />
+                </div>
+              </div>
+
+              <h2 className="font-bold text-md sm:text-lg text-yellow-600 sm:mt-4 mt-2 mb-1 sm:mb-2">
+                Main Features
+              </h2>
+              <ul className="text-sm sm:text-md">
+                <li>React application</li>
+                <li>Responsive UI</li>
+                <li>Authentication Firebase</li>
+                <li>DB Firebase</li>
+                <li>Redux for users</li>
+                <li>Stripe payment</li>
+                <li>Webhook Firebase/Stripe</li>
+              </ul>
+              <a
+                className="flex justify-center items-center bg-green-800 mt-4 text-white shadow-lg p-2 rounded-lg"
+                href="https://netflix-clone-e6153.web.app/"
+                target="blank"
+              >
+                Netflix Clone
+              </a>
+              <a
+                href="https://github.com/jpsm83/netflix-clone"
+                target="blank"
+              >
                 <div className="flex justify-center space-x-2 items-center bg-yellow-600 mt-4 text-white p-2 rounded-lg">
                   <Image src="/images/github.png" height={20} width={20} />
                   <p>Full Code</p>
