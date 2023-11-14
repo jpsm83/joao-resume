@@ -31,7 +31,7 @@ export default function Resume() {
           SKILLS
         </h1>
 
-        <div className="sm:rounded-xl rounded-md w-full shadow-md sm:shadow-xl flex justify-between flex-wrap sm:p-4 bg-gray-200">
+        <div className="sm:rounded-xl rounded-md w-full shadow-md sm:shadow-xl flex justify-center flex-wrap sm:p-4 bg-gray-200">
           <div className="flex space-x-2 m-4 items-center">
             <div className="flex justify-center items-center h-30 overflow-hidden shrink-0">
               <Image
@@ -39,7 +39,6 @@ export default function Resume() {
                 alt="Auth0 Image"
                 height={40}
                 width={40}
-                objectFit="cover"
               />
             </div>
             <p className="text-md sm:text-lg">Auth0</p>
@@ -52,7 +51,6 @@ export default function Resume() {
                 alt="Bootstrap Image"
                 height={40}
                 width={40}
-                objectFit="cover"
               />
             </div>
             <p className="text-md sm:text-lg">Bootstrap</p>
@@ -65,7 +63,6 @@ export default function Resume() {
                 alt="Sass Image"
                 height={40}
                 width={40}
-                objectFit="cover"
               />
             </div>
             <p className="text-md sm:text-lg">Sass</p>
@@ -78,7 +75,6 @@ export default function Resume() {
                 alt="Css Image"
                 height={40}
                 width={40}
-                objectFit="cover"
               />
             </div>
             <p className="text-md sm:text-lg">Css</p>
@@ -91,7 +87,6 @@ export default function Resume() {
                 alt="PassportJs Image"
                 height={40}
                 width={40}
-                objectFit="cover"
               />
             </div>
             <p className="text-md sm:text-lg">PassportJs</p>
@@ -104,7 +99,6 @@ export default function Resume() {
                 alt="Express Image"
                 height={40}
                 width={40}
-                objectFit="cover"
               />
             </div>
             <p className="text-md sm:text-lg">Express</p>
@@ -117,7 +111,6 @@ export default function Resume() {
                 alt="Firebase Image"
                 height={40}
                 width={40}
-                objectFit="cover"
               />
             </div>
             <p className="text-md sm:text-lg">Firebase</p>
@@ -130,7 +123,6 @@ export default function Resume() {
                 alt="Github Image"
                 height={40}
                 width={40}
-                objectFit="cover"
               />
             </div>
             <p className="text-md sm:text-lg">Github</p>
@@ -143,7 +135,6 @@ export default function Resume() {
                 alt="Heroku Image"
                 height={40}
                 width={40}
-                objectFit="cover"
               />
             </div>
             <p className="text-md sm:text-lg">Heroku</p>
@@ -156,7 +147,6 @@ export default function Resume() {
                 alt="Hooks Image"
                 height={40}
                 width={40}
-                objectFit="cover"
               />
             </div>
             <p className="text-md sm:text-lg">Hooks</p>
@@ -169,7 +159,6 @@ export default function Resume() {
                 alt="Html Image"
                 height={40}
                 width={40}
-                objectFit="cover"
               />
             </div>
             <p className="text-md sm:text-lg">Html</p>
@@ -182,7 +171,6 @@ export default function Resume() {
                 alt="Javascript Image"
                 height={40}
                 width={40}
-                objectFit="cover"
               />
             </div>
             <p className="text-md sm:text-lg">Javascript</p>
@@ -195,7 +183,6 @@ export default function Resume() {
                 alt="MongoDB Image"
                 height={40}
                 width={40}
-                objectFit="cover"
               />
             </div>
             <p className="text-md sm:text-lg">MongoDB</p>
@@ -208,7 +195,6 @@ export default function Resume() {
                 alt="Next Image"
                 height={40}
                 width={40}
-                objectFit="cover"
               />
             </div>
             <p className="text-md sm:text-lg">Next</p>
@@ -221,7 +207,6 @@ export default function Resume() {
                 alt="Node Image"
                 height={40}
                 width={40}
-                objectFit="cover"
               />
             </div>
             <p className="text-md sm:text-lg">Node</p>
@@ -234,7 +219,6 @@ export default function Resume() {
                 alt="Postman Image"
                 height={40}
                 width={40}
-                objectFit="cover"
               />
             </div>
             <p className="text-md sm:text-lg">Postman</p>
@@ -247,7 +231,6 @@ export default function Resume() {
                 alt="React Image"
                 height={40}
                 width={40}
-                objectFit="cover"
               />
             </div>
             <p className="text-md sm:text-lg">React</p>
@@ -260,7 +243,6 @@ export default function Resume() {
                 alt="Redux Image"
                 height={40}
                 width={40}
-                objectFit="cover"
               />
             </div>
             <p className="text-md sm:text-lg">Redux</p>
@@ -273,7 +255,6 @@ export default function Resume() {
                 alt="Tailwind Image"
                 height={40}
                 width={40}
-                objectFit="cover"
               />
             </div>
             <p className="text-md sm:text-lg">Tailwind</p>
@@ -286,10 +267,69 @@ export default function Resume() {
                 alt="Ubuntu Image"
                 height={40}
                 width={40}
-                objectFit="cover"
               />
             </div>
             <p className="text-md sm:text-lg">Ubuntu</p>
+          </div>
+
+          <div className="flex space-x-2 m-4 items-center">
+            <div className="flex justify-center items-center h-30 overflow-hidden shrink-0">
+              <Image
+                src="/images/prisma.jpg"
+                alt="Prisma Image"
+                height={40}
+                width={40}
+              />
+            </div>
+            <p className="text-md sm:text-lg">Prisma</p>
+          </div>
+
+          <div className="flex space-x-2 m-4 items-center">
+            <div className="flex justify-center items-center h-30 overflow-hidden shrink-0">
+              <Image
+                src="/images/django.jpg"
+                alt="Django Image"
+                height={40}
+                width={40}
+              />
+            </div>
+            <p className="text-md sm:text-lg">Django</p>
+          </div>
+
+          <div className="flex space-x-2 m-4 items-center">
+            <div className="flex justify-center items-center h-30 overflow-hidden shrink-0">
+              <Image
+                src="/images/python.svg"
+                alt="Python Image"
+                height={40}
+                width={40}
+              />
+            </div>
+            <p className="text-md sm:text-lg">Python</p>
+          </div>
+
+          <div className="flex space-x-2 m-4 items-center">
+            <div className="flex justify-center items-center h-30 overflow-hidden shrink-0">
+              <Image
+                src="/images/typescript.png"
+                alt="Typescript Image"
+                height={40}
+                width={40}
+              />
+            </div>
+            <p className="text-md sm:text-lg">Typescript</p>
+          </div>
+
+          <div className="flex space-x-2 m-4 items-center">
+            <div className="flex justify-center items-center h-30 overflow-hidden shrink-0">
+              <Image
+                src="/images/zustand.png"
+                alt="Zustand Image"
+                height={40}
+                width={40}
+              />
+            </div>
+            <p className="text-md sm:text-lg">Zustand</p>
           </div>
 
           <div className="flex space-x-2 m-4 items-center">
@@ -299,7 +339,6 @@ export default function Resume() {
                 alt="Vercel Image"
                 height={40}
                 width={40}
-                objectFit="cover"
               />
             </div>
             <p className="text-md sm:text-lg">Vercel</p>

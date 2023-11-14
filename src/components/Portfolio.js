@@ -3,7 +3,7 @@ import { useState } from "react";
 import Image from "next/image";
 
 export default function Portfolio() {
-  const [showAmazon, setShowAmazon] = useState(false);
+  const [showCoolBananas, setshowCoolBananas] = useState(false);
   const [showRecipes, setShowRecipes] = useState(false);
   const [showMovieRedux, setShowMovieRedux] = useState(false);
   const [showToDo, setShowToDo] = useState(false);
@@ -31,36 +31,25 @@ export default function Portfolio() {
 
       <div className="bg-gray-200 rounded-md sm:rounded-lg sm:mt-12 mt-6 flex flex-wrap overflow-scroll scrollbar-hide p-2 justify-center">
         <div className="flex flex-col w-60 overflow-hidden sm:m-4 m-2">
-          <button onClick={() => toggleShow(showAmazon, setShowAmazon)}>
+          <button onClick={() => toggleShow(showCoolBananas, setshowCoolBananas)}>
             <Image
-              src="/images/amazonClone.PNG"
-              alt="Amazon Clone Image"
+              src="/images/cool_bananas.png"
+              alt="Cool Bananas Image"
               height={120}
               width={240}
-              objectFit="contain"
             />
           </button>
 
-          {showAmazon ? (
+          {showCoolBananas ? (
             <div>
               <div className="mt-2 flex justify-center flex-wrap">
-                <div className="flex justify-center items-center m-1 overflow-hidden shrink-0">
-                  <Image
-                    src="/images/firebase.png"
-                    alt="Firebase Image"
-                    height={20}
-                    width={20}
-                    objectFit="contain"
-                  />
-                </div>
                 <div className="flex justify-center items-center m-1 overflow-hidden shrink-0">
                   <Image
                     src="/images/github.png"
                     alt="github Image"
                     height={20}
                     width={20}
-                    objectFit="contain"
-                  />
+                        />
                 </div>
                 <div className="flex justify-center items-center m-1 overflow-hidden shrink-0">
                   <Image
@@ -68,8 +57,7 @@ export default function Portfolio() {
                     alt="Hooks Image"
                     height={20}
                     width={20}
-                    objectFit="contain"
-                  />
+                        />
                 </div>
                 <div className="flex justify-center items-center overflow-hidden shrink-0">
                   <Image
@@ -77,8 +65,7 @@ export default function Portfolio() {
                     alt="Html Image"
                     height={20}
                     width={20}
-                    objectFit="contain"
-                  />
+                        />
                 </div>
                 <div className="flex justify-center items-center m-1 overflow-hidden shrink-0">
                   <Image
@@ -86,8 +73,15 @@ export default function Portfolio() {
                     alt="Javascript Image"
                     height={20}
                     width={20}
-                    objectFit="contain"
-                  />
+                        />
+                </div>
+                <div className="flex justify-center items-center m-1 overflow-hidden shrink-0">
+                  <Image
+                    src="/images/typescript.png"
+                    alt="Typescript Image"
+                    height={20}
+                    width={20}
+                        />
                 </div>
                 <div className="flex justify-center items-center m-1 overflow-hidden shrink-0">
                   <Image
@@ -95,8 +89,7 @@ export default function Portfolio() {
                     alt="Next Image"
                     height={20}
                     width={20}
-                    objectFit="contain"
-                  />
+                        />
                 </div>
                 <div className="flex justify-center items-center overflow-hidden shrink-0">
                   <Image
@@ -104,8 +97,7 @@ export default function Portfolio() {
                     alt="Node Image"
                     height={20}
                     width={20}
-                    objectFit="contain"
-                  />
+                        />
                 </div>
                 <div className="flex justify-center items-center m-1 overflow-hidden shrink-0">
                   <Image
@@ -113,17 +105,15 @@ export default function Portfolio() {
                     alt="React Image"
                     height={20}
                     width={20}
-                    objectFit="contain"
-                  />
+                        />
                 </div>
                 <div className="flex justify-center items-center m-1 overflow-hidden shrink-0">
                   <Image
-                    src="/images/redux.jpg"
-                    alt="Redux Image"
+                    src="/images/zustand.png"
+                    alt="Zustand Image"
                     height={20}
                     width={20}
-                    objectFit="contain"
-                  />
+                        />
                 </div>
                 <div className="flex justify-center items-center overflow-hidden shrink-0">
                   <Image
@@ -131,17 +121,15 @@ export default function Portfolio() {
                     alt="Tailwind Image"
                     height={20}
                     width={20}
-                    objectFit="contain"
-                  />
+                        />
                 </div>
                 <div className="flex justify-center items-center m-1 overflow-hidden shrink-0">
                   <Image
-                    src="/images/ubuntu.png"
-                    alt="Ubuntu Image"
+                    src="/images/prisma.jpg"
+                    alt="Prisma Image"
                     height={20}
                     width={20}
-                    objectFit="contain"
-                  />
+                        />
                 </div>
                 <div className="flex justify-center items-center m-1 overflow-hidden shrink-0">
                   <Image
@@ -149,8 +137,15 @@ export default function Portfolio() {
                     alt="Vercel Image"
                     height={20}
                     width={20}
-                    objectFit="contain"
-                  />
+                        />
+                </div>
+                <div className="flex justify-center items-center m-1 overflow-hidden shrink-0">
+                  <Image
+                    src="/images/mongodb.gif"
+                    alt="MongoDB Image"
+                    height={20}
+                    width={20}
+                        />
                 </div>
               </div>
 
@@ -162,19 +157,17 @@ export default function Portfolio() {
                 <li>Responsive UI</li>
                 <li>Authentication NextAuth</li>
                 <li>Google Signup</li>
-                <li>Redux for shopping basket</li>
-                <li>Checkout payment with Stripe</li>
-                <li>Firebase Store & Auth</li>
-                <li>Webhook between Firebase & Stripe</li>
+                <li>Zustand for state management</li>
+                <li>Prisma and MongoDB for backend</li>
               </ul>
               <a
                 className="flex justify-center items-center bg-green-800 mt-4 text-white shadow-md p-2 rounded-lg"
-                href="https://amazon-clone-2-lake.vercel.app/"
+                href="https://coolbananas.org/"
                 target="blank"
               >
-                Amazon Clone
+                Cool Bananas
               </a>
-              <a href="https://github.com/jpsm83/amazon-clone" target="blank">
+              <a href="https://github.com/jpsm83/coolbananas" target="blank">
                 <div className="flex justify-center space-x-2 items-center bg-yellow-600 mt-4 text-white p-2 rounded-lg">
                   <Image src="/images/github.png" height={20} width={20} />
                   <p>Full Code</p>
@@ -192,7 +185,6 @@ export default function Portfolio() {
               alt="Recipes Library Image"
               height={120}
               width={240}
-              objectFit="contain"
             />
           </button>
 
@@ -205,8 +197,7 @@ export default function Portfolio() {
                     alt="PassportJs Image"
                     height={20}
                     width={20}
-                    objectFit="contain"
-                  />
+                        />
                 </div>
                 <div className="flex justify-center items-center m-1 overflow-hidden shrink-0">
                   <Image
@@ -214,8 +205,7 @@ export default function Portfolio() {
                     alt="Express Image"
                     height={20}
                     width={20}
-                    objectFit="contain"
-                  />
+                        />
                 </div>
                 <div className="flex justify-center items-center m-1 overflow-hidden shrink-0">
                   <Image
@@ -223,8 +213,7 @@ export default function Portfolio() {
                     alt="Github Image"
                     height={20}
                     width={20}
-                    objectFit="contain"
-                  />
+                        />
                 </div>
                 <div className="flex justify-center items-center m-1 overflow-hidden shrink-0">
                   <Image
@@ -232,8 +221,7 @@ export default function Portfolio() {
                     alt="Heroku Image"
                     height={20}
                     width={20}
-                    objectFit="contain"
-                  />
+                        />
                 </div>
                 <div className="flex justify-center items-center m-1 overflow-hidden shrink-0">
                   <Image
@@ -241,8 +229,7 @@ export default function Portfolio() {
                     alt="Hooks Image"
                     height={20}
                     width={20}
-                    objectFit="contain"
-                  />
+                        />
                 </div>
                 <div className="flex justify-center items-center overflow-hidden shrink-0">
                   <Image
@@ -250,8 +237,7 @@ export default function Portfolio() {
                     alt="Html Image"
                     height={20}
                     width={20}
-                    objectFit="contain"
-                  />
+                        />
                 </div>
                 <div className="flex justify-center items-center m-1 overflow-hidden shrink-0">
                   <Image
@@ -259,8 +245,7 @@ export default function Portfolio() {
                     alt="Javascript Image"
                     height={20}
                     width={20}
-                    objectFit="contain"
-                  />
+                        />
                 </div>
                 <div className="flex justify-center items-center m-1 overflow-hidden shrink-0">
                   <Image
@@ -268,8 +253,7 @@ export default function Portfolio() {
                     alt="MongoDb Image"
                     height={20}
                     width={20}
-                    objectFit="contain"
-                  />
+                        />
                 </div>
                 <div className="flex justify-center items-center overflow-hidden shrink-0">
                   <Image
@@ -277,8 +261,7 @@ export default function Portfolio() {
                     alt="Node Image"
                     height={20}
                     width={20}
-                    objectFit="contain"
-                  />
+                        />
                 </div>
                 <div className="flex justify-center items-center m-1 overflow-hidden shrink-0">
                   <Image
@@ -286,8 +269,7 @@ export default function Portfolio() {
                     alt="React Image"
                     height={20}
                     width={20}
-                    objectFit="contain"
-                  />
+                        />
                 </div>
                 <div className="flex justify-center items-center m-1 overflow-hidden shrink-0">
                   <Image
@@ -295,8 +277,7 @@ export default function Portfolio() {
                     alt="Postman Image"
                     height={20}
                     width={20}
-                    objectFit="contain"
-                  />
+                        />
                 </div>
                 <div className="flex justify-center items-center overflow-hidden shrink-0">
                   <Image
@@ -304,8 +285,7 @@ export default function Portfolio() {
                     alt="Tailwind Image"
                     height={20}
                     width={20}
-                    objectFit="contain"
-                  />
+                        />
                 </div>
                 <div className="flex justify-center items-center m-1 overflow-hidden shrink-0">
                   <Image
@@ -313,8 +293,7 @@ export default function Portfolio() {
                     alt="Ubuntu Image"
                     height={20}
                     width={20}
-                    objectFit="contain"
-                  />
+                        />
                 </div>
               </div>
 
@@ -367,7 +346,6 @@ export default function Portfolio() {
               alt="Movie Redux Image"
               height={120}
               width={240}
-              objectFit="contain"
             />
           </button>
 
@@ -380,8 +358,7 @@ export default function Portfolio() {
                     alt="github Image"
                     height={20}
                     width={20}
-                    objectFit="contain"
-                  />
+                        />
                 </div>
                 <div className="flex justify-center items-center m-1 overflow-hidden shrink-0">
                   <Image
@@ -389,8 +366,7 @@ export default function Portfolio() {
                     alt="Hooks Image"
                     height={20}
                     width={20}
-                    objectFit="contain"
-                  />
+                        />
                 </div>
                 <div className="flex justify-center items-center overflow-hidden shrink-0">
                   <Image
@@ -398,8 +374,7 @@ export default function Portfolio() {
                     alt="Html Image"
                     height={20}
                     width={20}
-                    objectFit="contain"
-                  />
+                        />
                 </div>
                 <div className="flex justify-center items-center m-1 overflow-hidden shrink-0">
                   <Image
@@ -407,8 +382,7 @@ export default function Portfolio() {
                     alt="Javascript Image"
                     height={20}
                     width={20}
-                    objectFit="contain"
-                  />
+                        />
                 </div>
                 <div className="flex justify-center items-center overflow-hidden shrink-0">
                   <Image
@@ -416,8 +390,7 @@ export default function Portfolio() {
                     alt="Node Image"
                     height={20}
                     width={20}
-                    objectFit="contain"
-                  />
+                        />
                 </div>
                 <div className="flex justify-center items-center m-1 overflow-hidden shrink-0">
                   <Image
@@ -425,8 +398,7 @@ export default function Portfolio() {
                     alt="React Image"
                     height={20}
                     width={20}
-                    objectFit="contain"
-                  />
+                        />
                 </div>
                 <div className="flex justify-center items-center m-1 overflow-hidden shrink-0">
                   <Image
@@ -434,8 +406,7 @@ export default function Portfolio() {
                     alt="Redux Image"
                     height={20}
                     width={20}
-                    objectFit="contain"
-                  />
+                        />
                 </div>
                 <div className="flex justify-center items-center overflow-hidden shrink-0">
                   <Image
@@ -443,8 +414,7 @@ export default function Portfolio() {
                     alt="Sass Image"
                     height={20}
                     width={20}
-                    objectFit="contain"
-                  />
+                        />
                 </div>
                 <div className="flex justify-center items-center m-1 overflow-hidden shrink-0">
                   <Image
@@ -452,8 +422,7 @@ export default function Portfolio() {
                     alt="Ubuntu Image"
                     height={20}
                     width={20}
-                    objectFit="contain"
-                  />
+                        />
                 </div>
                 <div className="flex justify-center items-center m-1 overflow-hidden shrink-0">
                   <Image
@@ -461,8 +430,7 @@ export default function Portfolio() {
                     alt="Vercel Image"
                     height={20}
                     width={20}
-                    objectFit="contain"
-                  />
+                        />
                 </div>
               </div>
 
@@ -502,7 +470,6 @@ export default function Portfolio() {
               alt="To Do App Image"
               height={120}
               width={240}
-              objectFit="contain"
             />
           </button>
 
@@ -515,8 +482,7 @@ export default function Portfolio() {
                     alt="github Image"
                     height={20}
                     width={20}
-                    objectFit="contain"
-                  />
+                        />
                 </div>
                 <div className="flex justify-center items-center m-1 overflow-hidden shrink-0">
                   <Image
@@ -524,8 +490,7 @@ export default function Portfolio() {
                     alt="Hooks Image"
                     height={20}
                     width={20}
-                    objectFit="contain"
-                  />
+                        />
                 </div>
                 <div className="flex justify-center items-center overflow-hidden shrink-0">
                   <Image
@@ -533,8 +498,7 @@ export default function Portfolio() {
                     alt="Html Image"
                     height={20}
                     width={20}
-                    objectFit="contain"
-                  />
+                        />
                 </div>
                 <div className="flex justify-center items-center m-1 overflow-hidden shrink-0">
                   <Image
@@ -542,8 +506,7 @@ export default function Portfolio() {
                     alt="Javascript Image"
                     height={20}
                     width={20}
-                    objectFit="contain"
-                  />
+                        />
                 </div>
                 <div className="flex justify-center items-center overflow-hidden shrink-0">
                   <Image
@@ -551,8 +514,7 @@ export default function Portfolio() {
                     alt="Node Image"
                     height={20}
                     width={20}
-                    objectFit="contain"
-                  />
+                        />
                 </div>
                 <div className="flex justify-center items-center m-1 overflow-hidden shrink-0">
                   <Image
@@ -560,8 +522,7 @@ export default function Portfolio() {
                     alt="React Image"
                     height={20}
                     width={20}
-                    objectFit="contain"
-                  />
+                        />
                 </div>
                 <div className="flex justify-center items-center m-1 overflow-hidden shrink-0">
                   <Image
@@ -569,8 +530,7 @@ export default function Portfolio() {
                     alt="Ubuntu Image"
                     height={20}
                     width={20}
-                    objectFit="contain"
-                  />
+                        />
                 </div>
                 <div className="flex justify-center items-center m-1 overflow-hidden shrink-0">
                   <Image
@@ -578,8 +538,7 @@ export default function Portfolio() {
                     alt="Heroku Image"
                     height={20}
                     width={20}
-                    objectFit="contain"
-                  />
+                        />
                 </div>
                 <div className="flex justify-center items-center m-1 overflow-hidden shrink-0">
                   <Image
@@ -587,8 +546,7 @@ export default function Portfolio() {
                     alt="MongoDB Image"
                     height={20}
                     width={20}
-                    objectFit="contain"
-                  />
+                        />
                 </div>
                 <div className="flex justify-center items-center m-1 overflow-hidden shrink-0">
                   <Image
@@ -596,8 +554,7 @@ export default function Portfolio() {
                     alt="Postman Image"
                     height={20}
                     width={20}
-                    objectFit="contain"
-                  />
+                        />
                 </div>
                 <div className="flex justify-center items-center m-1 overflow-hidden shrink-0">
                   <Image
@@ -605,8 +562,7 @@ export default function Portfolio() {
                     alt="Tailwind Image"
                     height={20}
                     width={20}
-                    objectFit="contain"
-                  />
+                        />
                 </div>
                 <div className="flex justify-center items-center m-1 overflow-hidden shrink-0">
                   <Image
@@ -614,8 +570,7 @@ export default function Portfolio() {
                     alt="Express Image"
                     height={20}
                     width={20}
-                    objectFit="contain"
-                  />
+                        />
                 </div>
                 <div className="flex justify-center items-center m-1 overflow-hidden shrink-0">
                   <Image
@@ -623,8 +578,7 @@ export default function Portfolio() {
                     alt="Passport Image"
                     height={20}
                     width={20}
-                    objectFit="contain"
-                  />
+                        />
                 </div>
               </div>
               <h2 className="font-bold text-md sm:text-lg text-yellow-600 sm:mt-4 mt-2 mb-1 sm:mb-2">
@@ -670,7 +624,6 @@ export default function Portfolio() {
               alt="Netflix Clone Image"
               height={120}
               width={240}
-              objectFit="contain"
             />
           </button>
 
@@ -683,8 +636,7 @@ export default function Portfolio() {
                     alt="Github Image"
                     height={20}
                     width={20}
-                    objectFit="contain"
-                  />
+                        />
                 </div>
                 <div className="flex justify-center items-center m-1 overflow-hidden shrink-0">
                   <Image
@@ -692,8 +644,7 @@ export default function Portfolio() {
                     alt="Hooks Image"
                     height={20}
                     width={20}
-                    objectFit="contain"
-                  />
+                        />
                 </div>
                 <div className="flex justify-center items-center overflow-hidden shrink-0">
                   <Image
@@ -701,8 +652,7 @@ export default function Portfolio() {
                     alt="Html Image"
                     height={20}
                     width={20}
-                    objectFit="contain"
-                  />
+                        />
                 </div>
                 <div className="flex justify-center items-center m-1 overflow-hidden shrink-0">
                   <Image
@@ -710,8 +660,7 @@ export default function Portfolio() {
                     alt="Javascript Image"
                     height={20}
                     width={20}
-                    objectFit="contain"
-                  />
+                        />
                 </div>
                 <div className="flex justify-center items-center overflow-hidden shrink-0">
                   <Image
@@ -719,8 +668,7 @@ export default function Portfolio() {
                     alt="Node Image"
                     height={20}
                     width={20}
-                    objectFit="contain"
-                  />
+                        />
                 </div>
                 <div className="flex justify-center items-center m-1 overflow-hidden shrink-0">
                   <Image
@@ -728,8 +676,7 @@ export default function Portfolio() {
                     alt="React Image"
                     height={20}
                     width={20}
-                    objectFit="contain"
-                  />
+                        />
                 </div>
                 <div className="flex justify-center items-center overflow-hidden shrink-0">
                   <Image
@@ -737,8 +684,7 @@ export default function Portfolio() {
                     alt="Css Image"
                     height={20}
                     width={20}
-                    objectFit="contain"
-                  />
+                        />
                 </div>
                 <div className="flex justify-center items-center m-1 overflow-hidden shrink-0">
                   <Image
@@ -746,8 +692,7 @@ export default function Portfolio() {
                     alt="Ubuntu Image"
                     height={20}
                     width={20}
-                    objectFit="contain"
-                  />
+                        />
                 </div>
                 <div className="flex justify-center items-center m-1 overflow-hidden shrink-0">
                   <Image
@@ -755,8 +700,7 @@ export default function Portfolio() {
                     alt="Firebase Image"
                     height={20}
                     width={20}
-                    objectFit="contain"
-                  />
+                        />
                 </div>
                 <div className="flex justify-center items-center m-1 overflow-hidden shrink-0">
                   <Image
@@ -764,8 +708,7 @@ export default function Portfolio() {
                     alt="Redux Image"
                     height={20}
                     width={20}
-                    objectFit="contain"
-                  />
+                        />
                 </div>
               </div>
 
@@ -806,7 +749,6 @@ export default function Portfolio() {
               alt="MWC22 Image"
               height={120}
               width={240}
-              objectFit="contain"
             />
           </button>
 
@@ -819,8 +761,7 @@ export default function Portfolio() {
                     alt="github Image"
                     height={20}
                     width={20}
-                    objectFit="contain"
-                  />
+                        />
                 </div>
                 <div className="flex justify-center items-center m-1 overflow-hidden shrink-0">
                   <Image
@@ -828,8 +769,7 @@ export default function Portfolio() {
                     alt="Hooks Image"
                     height={20}
                     width={20}
-                    objectFit="contain"
-                  />
+                        />
                 </div>
                 <div className="flex justify-center items-center overflow-hidden shrink-0">
                   <Image
@@ -837,8 +777,7 @@ export default function Portfolio() {
                     alt="Html Image"
                     height={20}
                     width={20}
-                    objectFit="contain"
-                  />
+                        />
                 </div>
                 <div className="flex justify-center items-center m-1 overflow-hidden shrink-0">
                   <Image
@@ -846,8 +785,7 @@ export default function Portfolio() {
                     alt="Javascript Image"
                     height={20}
                     width={20}
-                    objectFit="contain"
-                  />
+                        />
                 </div>
                 <div className="flex justify-center items-center overflow-hidden shrink-0">
                   <Image
@@ -855,8 +793,7 @@ export default function Portfolio() {
                     alt="Node Image"
                     height={20}
                     width={20}
-                    objectFit="contain"
-                  />
+                        />
                 </div>
                 <div className="flex justify-center items-center m-1 overflow-hidden shrink-0">
                   <Image
@@ -864,8 +801,7 @@ export default function Portfolio() {
                     alt="React Image"
                     height={20}
                     width={20}
-                    objectFit="contain"
-                  />
+                        />
                 </div>
                 <div className="flex justify-center items-center m-1 overflow-hidden shrink-0">
                   <Image
@@ -873,8 +809,7 @@ export default function Portfolio() {
                     alt="Ubuntu Image"
                     height={20}
                     width={20}
-                    objectFit="contain"
-                  />
+                        />
                 </div>
                 <div className="flex justify-center items-center m-1 overflow-hidden shrink-0">
                   <Image
@@ -882,8 +817,7 @@ export default function Portfolio() {
                     alt="Heroku Image"
                     height={20}
                     width={20}
-                    objectFit="contain"
-                  />
+                        />
                 </div>
                 <div className="flex justify-center items-center m-1 overflow-hidden shrink-0">
                   <Image
@@ -891,8 +825,7 @@ export default function Portfolio() {
                     alt="MongoDB Image"
                     height={20}
                     width={20}
-                    objectFit="contain"
-                  />
+                        />
                 </div>
                 <div className="flex justify-center items-center m-1 overflow-hidden shrink-0">
                   <Image
@@ -900,8 +833,7 @@ export default function Portfolio() {
                     alt="Postman Image"
                     height={20}
                     width={20}
-                    objectFit="contain"
-                  />
+                        />
                 </div>
                 <div className="flex justify-center items-center m-1 overflow-hidden shrink-0">
                   <Image
@@ -909,8 +841,7 @@ export default function Portfolio() {
                     alt="Tailwind Image"
                     height={20}
                     width={20}
-                    objectFit="contain"
-                  />
+                        />
                 </div>
                 <div className="flex justify-center items-center m-1 overflow-hidden shrink-0">
                   <Image
@@ -918,8 +849,7 @@ export default function Portfolio() {
                     alt="Express Image"
                     height={20}
                     width={20}
-                    objectFit="contain"
-                  />
+                        />
                 </div>
                 <div className="flex justify-center items-center m-1 overflow-hidden shrink-0">
                   <Image
@@ -927,8 +857,7 @@ export default function Portfolio() {
                     alt="Passport Image"
                     height={20}
                     width={20}
-                    objectFit="contain"
-                  />
+                        />
                 </div>
               </div>
               <h2 className="font-bold text-md sm:text-lg text-yellow-600 sm:mt-4 mt-2 mb-1 sm:mb-2">
