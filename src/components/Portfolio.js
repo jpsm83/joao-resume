@@ -851,6 +851,7 @@ export default function Portfolio() {
                     width={20}
                         />
                 </div>
+              
                 <div className="flex justify-center items-center m-1 overflow-hidden shrink-0">
                   <Image
                     src="/images/passportjs.png"
