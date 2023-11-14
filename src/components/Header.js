@@ -14,7 +14,6 @@ export default function Header() {
           alt="Background Image"
           height={1033}
           width={1838}
-          objectFit="cover"
         />
       </div>
 
@@ -29,11 +28,10 @@ export default function Header() {
           }
         </h1>
         <h3 className="text-md sm:text-lg text-white text-center">
-          Based in Barcelona.{" "}
+          Based in Barcelona. With more tham 2 years working as IoT developer. Looking for oportunities as{" "}
           <span className="text-lg sm:text-xl font-bold text-white">
-            JUNIOR MERN Full Stack Developer.{" "}
+            MERN Full Stack Developer.{" "}
           </span>
-          Ready for my first opportunity as a professional Developer.
         </h3>
         <div className="flex space-x-5 sm:space-x-8 sm:mt-6 mt-4">
           <a href="https://www.linkedin.com/in/joaopsmachado/" target="blank">

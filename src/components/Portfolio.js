@@ -574,7 +574,7 @@ export default function Portfolio() {
                 </div>
                 <div className="flex justify-center items-center m-1 overflow-hidden shrink-0">
                   <Image
-                    src="/images/passport.png"
+                    src="/images/passportjs.png"
                     alt="Passport Image"
                     height={20}
                     width={20}
@@ -853,7 +853,7 @@ export default function Portfolio() {
                 </div>
                 <div className="flex justify-center items-center m-1 overflow-hidden shrink-0">
                   <Image
-                    src="/images/passport.png"
+                    src="/images/passportjs.png"
                     alt="Passport Image"
                     height={20}
                     width={20}

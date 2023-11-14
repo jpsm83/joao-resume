@@ -13,23 +13,31 @@ export default function About() {
           alt="Profile Image"
           height={900}
           width={567}
-          objectFit="cover"
         />
       </div>
       <div className="flex flex-col w-full space-y-2">
         <h2 className="text-lg sm:text-xl text-white font-bold">About Me</h2>
         <p className="text-sm sm:text-md text-gray-400 text-justify">
-          I am excited to get involved in the programming field, I have prepared
-          myself, trained intensively to become a Full Stack Developer and I am ready to
-          show you what I am capable of. I am interested in a full stack web development
-          position, based on MongoDB, ExpressJS, ReactJS, NextJS, TailwindCSS and
-          NodeJS but also, not afraid and keen to learn new programming
-          languages if requested. My main goal is to become an expert in
-          programming, learning and adding to the team that give me an
-          opportunity to show my best. Keeping myself up to date is a must, learn and
-          learn and them learn some more. That is the main thing that keeps me
-          motivated to start, programmers never get bored because they always
-          have something new to learn.
+          I am enthusiastic about contributing to the dynamic field of MERN
+          stack development. Equipped with a robust foundation, I have undergone
+          intensive training to emerge as a proficient Full Stack Developer.
+          Drawing from over 2 years of experience as an IoT developer, I am
+          poised to transition seamlessly into the realm of full-stack web
+          development. My tenure in IoT development has instilled in me a
+          resilience to challenges and a commitment to delivering high-quality
+          solutions. I approach each project with an unwavering dedication to
+          excellence, and I am now eager to channel my skills towards advancing
+          my career as a Full Stack Developer. I embrace the prospect of
+          learning new programming languages and technologies with enthusiasm.
+          My commitment to continuous improvement and adaptability positions me
+          as a valuable asset to any team. My primary objective is to evolve
+          into an expert programmer, consistently contributing to the success of
+          the team that affords me the opportunity to showcase my capabilities.
+          I understand the importance of staying abreast of industry trends and
+          technological advancements. The pursuit of knowledge is a driving
+          force in my professional journey, ensuring that I remain motivated and
+          engaged. I look forward to the opportunity to bring my passion for
+          learning and my technical expertise to a forward-thinking team.
         </p>
         <div className="flex flex-col w-full space-y-2">
           <h2 className="text-lg sm:text-xl text-white font-bold mt-6">
