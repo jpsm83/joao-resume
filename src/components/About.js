@@ -18,26 +18,7 @@ export default function About() {
       <div className="flex flex-col w-full space-y-2">
         <h2 className="text-lg sm:text-xl text-white font-bold">About Me</h2>
         <p className="text-sm sm:text-md text-gray-400 text-justify">
-          I am enthusiastic about contributing to the dynamic field of MERN
-          stack development. Equipped with a robust foundation, I have undergone
-          intensive training to emerge as a proficient Full Stack Developer.
-          Drawing from over 2 years of experience as an IoT developer, I am
-          poised to transition seamlessly into the realm of full-stack web
-          development. My tenure in IoT development has instilled in me a
-          resilience to challenges and a commitment to delivering high-quality
-          solutions. I approach each project with an unwavering dedication to
-          excellence, and I am now eager to channel my skills towards advancing
-          my career as a Full Stack Developer. I embrace the prospect of
-          learning new programming languages and technologies with enthusiasm.
-          My commitment to continuous improvement and adaptability positions me
-          as a valuable asset to any team. My primary objective is to evolve
-          into an expert programmer, consistently contributing to the success of
-          the team that affords me the opportunity to showcase my capabilities.
-          I understand the importance of staying abreast of industry trends and
-          technological advancements. The pursuit of knowledge is a driving
-          force in my professional journey, ensuring that I remain motivated and
-          engaged. I look forward to the opportunity to bring my passion for
-          learning and my technical expertise to a forward-thinking team.
+        I am eager about contributing to the dynamic field of MERN stack development. With a strong foundation, I&apos;ve gone through a rigorous training programme to become a skilled Full Stack Developer. With more than three years of programming experience under my belt, I&apos;m ready to move smoothly into full-stack web development. My experience developing IoT applications has given me a strong sense of resilience to problems and a dedication to provide solutions that meet high standards. I bring a relentless commitment to quality to every project I work on, and I&apos;m excited to use my abilities to further my career as a Full Stack Developer. I embrace the prospect of learning new programming languages and technologies with enthusiasm. My dedication to ongoing development and flexibility make me an invaluable member of any team. My main goal is to become a proficient programmer and continually add to the team&apos;s success so that I may demonstrate my ability. I recognise how critical it is to keep up with developments in technology and industry trends. My professional trajectory is propelled by my quest for knowledge, which keeps me inspired and involved. I&apos;m excited about the chance to join a progressive company and share my love of learning and technological know-how.
         </p>
         <div className="flex flex-col w-full space-y-2">
           <h2 className="text-lg sm:text-xl text-white font-bold mt-6">

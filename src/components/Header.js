@@ -22,15 +22,15 @@ export default function Header() {
           {
             <Typewriter
               onInit={(typewriter) => {
-                typewriter.typeString("Hello, I'm João").start();
+                typewriter.typeString("Hello, I'm João...").start();
               }}
             />
           }
         </h1>
         <h3 className="text-md sm:text-lg text-white text-center">
-          Based in Barcelona. With more tham 2 years working as IoT developer. Looking for oportunities as{" "}
+          Based in Barcelona. With more tham 3 years working as developer. Looking for oportunities as{" "}
           <span className="text-lg sm:text-xl font-bold text-white">
-            MERN Full Stack Developer.{" "}
+            MERN Full Stack Developer.
           </span>
         </h3>
         <div className="flex space-x-5 sm:space-x-8 sm:mt-6 mt-4">
